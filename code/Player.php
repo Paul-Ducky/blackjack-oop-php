@@ -57,5 +57,11 @@ class Player
 }
 class Dealer extends Player
 {
-
+    public const MIN_HIT_VALUE = 15;
+    public function hit(deck $deck): void
+    {
+        while ($this->getScore()<self::MIN_HIT_VALUE) {
+            parent::hit($deck);
+        }
+    }
 }
