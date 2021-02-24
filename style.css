@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: -webkit-linear-gradient(115deg, rgb(127, 174, 217), rgb(54, 119, 39));
+    background: linear-gradient(115deg, rgb(127, 174, 217), rgb(54, 119, 39));
+    background-size: cover;
+   background-repeat: no-repeat;
+    font-size: 5rem;
+}
+
+.btn{
+    font-size: 2rem;
+    width: 250px;
+    height: 100px;
+    border-radius: 10%;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+}
+.card{
+    font-size: 15rem;
+}

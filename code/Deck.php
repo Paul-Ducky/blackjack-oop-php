@@ -6,7 +6,7 @@ class Deck
     private const CARDS_PER_SUIT = 14;//including the knight card.
     private const KNIGHT_CARD = 12;//In italian & spanish decks there is a knight card, but we don't need it
 
-    private $cards = [];
+    private array $cards = [];
 
     public function __construct() {
         $suits = [
@@ -19,7 +19,6 @@ class Deck
         foreach ($suits AS $suit) {
             foreach(range(1, self::CARDS_PER_SUIT) AS $i) {
                 if($i === self::KNIGHT_CARD) continue;
-
                 $this->cards[] = new Card($suit, $i);
             }
         }
